@@ -24,11 +24,76 @@ body {
   line-height: 1.6;
 }
 
-.brand-logo {
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
+.sidebar-profile {
+  text-align: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.sidebar-profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  overflow: hidden;
+  border: 3px solid rgba(102, 252, 241, 0.3);
+  box-shadow: 0 0 20px rgba(102, 252, 241, 0.15);
+}
+
+.sidebar-profile-image img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+.sidebar-name {
+  margin: 0 0 4px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.sidebar-title {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* Sidebar Social Links */
+.sidebar-social {
+  margin-top: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-social-btn {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.sidebar-social-btn:hover {
+  background: rgba(102, 252, 241, 0.1);
+  border-color: rgba(102, 252, 241, 0.4);
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.sidebar-social-btn svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* ====== LOADER ====== */
@@ -442,17 +507,6 @@ body.is-loaded .content {
   color: var(--text); font-size: .9rem; transition: transform .2s ease, background .2s ease;
 }
 .pill:hover { transform: translateY(-2px); background: rgba(255,255,255,.06); }
-
-/* Footer */
-.footer { border-top: 1px solid var(--border); background: var(--surface); }
-.footer-inner { width: min(1100px, 92vw); margin: 0 auto; display: flex; gap: 12px; padding: 16px 0; }
-.icon-btn {
-  display: inline-flex; align-items: center; gap: 8px; padding: 8px 12px;
-  border: 1px solid var(--border); border-radius: 12px; color: var(--text); text-decoration: none; background: var(--elev);
-  transition: transform .2s ease, background .2s ease, color .2s ease;
-}
-.icon-btn:hover { background: rgba(255,255,255,.03); color: var(--accent); }
-.tiny { width: min(1100px, 92vw); margin: 0 auto 40px; color: var(--muted); font-size: .85rem; }
 
 /* ====== RESPONSIVE ====== */
 @media (max-width: 980px) {

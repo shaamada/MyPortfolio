@@ -32,10 +32,14 @@
     </div>
   </div>
 
+  <!-- SIDEBAR - ONLY ONE! -->
   <aside class="sidebar" role="navigation" aria-label="Primary">
-    <div class="brand">
-      <img src="images/logo.jpeg" alt="Shaam Adam Logo" class="brand-logo">
-      <span class="brand-text">Shaam Adam</span>
+    <div class="sidebar-profile">
+      <div class="sidebar-profile-image">
+        <img src="images/profile.jpeg" alt="Shaam Adam">
+      </div>
+      <h3 class="sidebar-name">Shaam Adam</h3>
+      <p class="sidebar-title">GIS Specialist</p>
     </div>
 
     <nav class="nav">
@@ -44,8 +48,30 @@
       <a class="nav-link" href="#work">Work Samples</a>
       <a class="nav-link" href="#skills">Skills</a>
     </nav>
+
+    <div class="sidebar-social">
+      <a class="sidebar-social-btn" href="https://www.linkedin.com/in/shaam-adam-354ab524a/" target="_blank" rel="noopener"
+        aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-12h4v2" />
+          <rect x="2" y="9" width="4" height="12" />
+          <circle cx="4" cy="4" r="2" />
+        </svg>
+      </a>
+
+      <a class="sidebar-social-btn" href="https://github.com/shaamada" target="_blank" rel="noopener"
+        aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M15 22v-3a4.6 4.6 0 0 0-1-3.5c3 0 6-2 6-5.5a5.4 5.4 0 0 0-.5-2.5 5 5 0 0 0-.1-3.5s-1.1-.4-3.6 1.3A12.3 12.3 0 0 0 12 5a12.3 12.3 0 0 0-3.8.5C5.7 3.8 4.6 4.2 4.6 4.2a5 5 0 0 0-.1 3.5A5.4 5.4 0 0 0 4 10c0 3.5 3 5.5 6 5.5-.4.5-.7 1.3-.8 2.5" />
+        </svg>
+      </a>
+    </div>
   </aside>
 
+  <!-- MAIN CONTENT - OUTSIDE THE SIDEBAR! -->
   <main class="content" aria-live="polite">
     <section id="home" class="section hero" tabindex="-1">
       <div class="section-inner">
@@ -61,9 +87,11 @@
       <div class="section-inner">
         <h2>About</h2>
         <p>
-          I am a GIS Specialist skilled in mapping, web GIS, python (arcpy, geopandas, pandas) and visualizations.
-          Experienced in data
-          analysis, automating geoprocessing workflows and building interactive web applications for decision-making.
+          My name is Shaam Adam and I am a GIS Specialist at U-Spatial. I earned a Bachelor of Science in Geography
+          with a minor in Geographic Information Science in 2023. I am currently working on my Masters of Geographic
+          Information Science with a minor in Systems & Industrial Engineering. I am skilled in mapping, web GIS,
+          python (arcpy, geopandas, pandas) and visualizations.
+          Experienced in data analysis, automating geoprocessing workflows and building interactive web applications for decision-making.
         </p>
         <ul class="bullets">
           <li>ArcGIS Pro / ArcGIS Online / Experience Builder</li>
@@ -74,7 +102,7 @@
       </div>
     </section>
 
-    <!-- WORK SAMPLES SECTION - Masonry Grid -->
+    <!-- WORK ShaamPLES SECTION - Masonry Grid -->
     <section id="work" class="section" tabindex="-1">
       <div class="section-inner">
         <h2>Work Samples</h2>
@@ -89,20 +117,16 @@
               <span class="project-tag">Web App</span>
               <span class="project-tag">Geoprocessing Tool</span>
 
-              <!-- TODO: Add your project title -->
               <h3>Carbon Assessment Tool</h3>
 
-              <!-- TODO: Write your project description -->
               <p>Developed automated geoprocessing tool for carbon sequestration analysis using 1 km grid overlays.
                 Integrated custom tool into Experience Builder web application enabling real-time spatial analysis for
                 environmental decision-making. <em>(Private client project)</em></p>
               <div class="project-footer">
-                <!-- TODO: Add your links (or remove if not public) -->
                 <a class="btn small" href="https://www-igcollab.hub.arcgis.com" target="_blank" rel="noopener">Visit
                   Website</a>
               </div>
 
-              <!-- TODO: Add technologies used -->
               <div class="tech-stack">
                 <span class="tech-pill">ArcGIS Pro</span>
                 <span class="tech-pill">Python</span>
@@ -116,15 +140,15 @@
           <!-- PROJECT 2 - REGULAR CARD -->
           <article class="project-card">
             <div class="project-image">
-              <!-- TODO: Replace with actual image -->
               <img src="images/state_auditor.png" alt="State Auditor Dashboard">
             </div>
             <div class="project-content">
               <span class="project-tag">Dashboard</span>
-              <h3>Minnesota Office of the State Auditor Data Dashboards</h3>
-              <p>Developed Data dashboards for the Minnesota Office of the State Auditor. </p>
+              <h3>State Office of the State Auditor Data Dashboards</h3>
+              <p>Developed Data dashboards for the State Office of the State Auditor. </p>
               <div class="project-footer">
-                <a class="btn small" href="https://www.osa.state.mn.us/dashboards/data-dashboards-landing-page/" target="_blank" rel="noopener">View Dashboards</a>
+                <a class="btn small" href="https://www.osa.state.mn.us/dashboards/data-dashboards-landing-page/"
+                  target="_blank" rel="noopener">View Dashboards</a>
               </div>
               <div class="tech-stack">
                 <span class="tech-pill">ArcGIS Online</span>
@@ -133,120 +157,6 @@
               </div>
             </div>
           </article>
-
-          <!-- PROJECT 3 - SHORT CARD (Example: Proprietary Project) -->
-          <article class="project-card short">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66fcf1"
-                  stroke-width="2">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-              </div>
-            </div>
-            <div class="project-content">
-              <!-- Use "Private" or "Confidential" tag for proprietary work -->
-              <span class="project-tag">Private Project</span>
-              <h3>Enterprise Asset Management System</h3>
-
-              <!-- Focus on your role and impact, not specifics -->
-              <p>Developed spatial database and web mapping application for managing 50,000+ infrastructure assets.
-                Reduced data entry time by 60%.</p>
-
-              <!-- For proprietary work, remove links or add "Case Study" button -->
-              <div class="project-footer">
-                <a class="btn small ghost" href="#" target="_blank" rel="noopener">View Case Study</a>
-              </div>
-
-              <div class="tech-stack">
-                <span class="tech-pill">ArcGIS Enterprise</span>
-                <span class="tech-pill">SQL Server</span>
-                <span class="tech-pill">Python</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 4 - REGULAR CARD -->
-          <article class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66fcf1"
-                  stroke-width="2">
-                  <path d="M3 3v18h18" />
-                  <path d="m19 9-5 5-4-4-3 3" />
-                </svg>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Analysis</span>
-              <h3>Your Project Title</h3>
-              <p>Your project description here. Explain what you built, the problem it solved, and the impact.</p>
-              <div class="project-footer">
-                <a class="btn small" href="#" target="_blank" rel="noopener">View Map</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Report</a>
-              </div>
-              <div class="tech-stack">
-                <span class="tech-pill">Tool 1</span>
-                <span class="tech-pill">Tool 2</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 5 - TALL CARD -->
-          <article class="project-card tall">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66fcf1"
-                  stroke-width="2">
-                  <circle cx="12" cy="12" r="10" />
-                  <path
-                    d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                </svg>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Web Map</span>
-              <h3>Your Project Title</h3>
-              <p>Your project description here.</p>
-              <div class="project-footer">
-                <a class="btn small" href="#" target="_blank" rel="noopener">Story Map</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Data</a>
-              </div>
-              <div class="tech-stack">
-                <span class="tech-pill">Tool 1</span>
-                <span class="tech-pill">Tool 2</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- PROJECT 6 - REGULAR CARD -->
-          <article class="project-card">
-            <div class="project-image">
-              <div class="project-placeholder">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#66fcf1"
-                  stroke-width="2">
-                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                </svg>
-              </div>
-            </div>
-            <div class="project-content">
-              <span class="project-tag">Python Script</span>
-              <h3>Your Project Title</h3>
-              <p>Your project description here.</p>
-              <div class="project-footer">
-                <a class="btn small" href="#" target="_blank" rel="noopener">GitHub</a>
-                <a class="btn small ghost" href="#" target="_blank" rel="noopener">Documentation</a>
-              </div>
-              <div class="tech-stack">
-                <span class="tech-pill">Python</span>
-                <span class="tech-pill">ArcPy</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- ADD MORE PROJECTS AS NEEDED - Just copy one of the cards above -->
-
         </div>
       </div>
     </section>
@@ -270,27 +180,8 @@
       </div>
     </section>
 
+    <!-- Footer -->
     <footer class="footer">
-      <div class="footer-inner">
-        <a class="icon-btn" href="https://www.linkedin.com/in/shaam-adam-354ab524a/" target="_blank" rel="noopener"
-          aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-12h4v2" />
-            <rect x="2" y="9" width="4" height="12" />
-            <circle cx="4" cy="4" r="2" />
-          </svg>
-          LinkedIn
-        </a>
-        <a class="icon-btn" href="https://github.com/Shaamada" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
-            <path
-              d="M15 22v-3a4.6 4.6 0 0 0-1-3.5c3 0 6-2 6-5.5a5.4 5.4 0 0 0-.5-2.5 5 5 0 0 0-.1-3.5s-1.1-.4-3.6 1.3A12.3 12.3 0 0 0 12 5a12.3 12.3 0 0 0-3.8.5C5.7 3.8 4.6 4.2 4.6 4.2a5 5 0 0 0-.1 3.5A5.4 5.4 0 0 0 4 10c0 3.5 3 5.5 6 5.5-.4.5-.7 1.3-.8 2.5" />
-          </svg>
-          GitHub
-        </a>
-      </div>
       <p class="tiny">© <span id="year"></span> Shaam Adam. All rights reserved.</p>
     </footer>
   </main>
