@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>GIS Portfolio — Shaam Adam</title>
+  <title>Shaam Adam - Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -12,6 +12,29 @@
 </head>
 
 <body>
+  <!-- MOBILE HEADER -->
+  <div class="mobile-header">
+    <div class="mobile-header-content">
+      <div class="mobile-profile">
+        <img src="images/profile.jpeg" alt="Shaam Adam" class="mobile-profile-img">
+        <span class="mobile-name">Shaam Adam</span>
+      </div>
+      <div class="mobile-social">
+        <a href="https://www.linkedin.com/in/shaam-adam-354ab524a/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-12h4v2"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
+          </svg>
+        </a>
+        <a href="https://github.com/shaamada" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M15 22v-3a4.6 4.6 0 0 0-1-3.5c3 0 6-2 6-5.5a5.4 5.4 0 0 0-.5-2.5 5 5 0 0 0-.1-3.5s-1.1-.4-3.6 1.3A12.3 12.3 0 0 0 12 5a12.3 12.3 0 0 0-3.8.5C5.7 3.8 4.6 4.2 4.6 4.2a5 5 0 0 0-.1 3.5A5.4 5.4 0 0 0 4 10c0 3.5 3 5.5 6 5.5-.4.5-.7 1.3-.8 2.5"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
   <!-- Accessible skip link -->
   <a class="skip-link" href="#home">Skip to main content</a>
 
@@ -45,7 +68,7 @@
     <nav class="nav">
       <a class="nav-link active" href="#home">Home</a>
       <a class="nav-link" href="#about">About & Resume</a>
-      <a class="nav-link" href="#work">Work Samples</a>
+      <a class="nav-link" href="#work">Projects</a>
     </nav>
 
     <div class="sidebar-social">
@@ -120,7 +143,7 @@
     <!-- WORK ShaamPLES SECTION - Masonry Grid -->
     <section id="work" class="section" tabindex="-1">
       <div class="section-inner">
-        <h2>Work Samples</h2>
+        <h2>Projects</h2>
 
         <div class="masonry-grid">
 
@@ -131,6 +154,7 @@
             <div class="project-content">
               <span class="project-tag">Web App</span>
               <span class="project-tag">Geoprocessing Tool</span>
+              <span class="project-tag">Python</span>
 
               <h3>Carbon Assessment Tool</h3>
 
@@ -221,6 +245,33 @@
                 <span class="tech-pill">ArcGIS Pro</span>
                 <span class="tech-pill">ArcGIS Enterprise</span>
                 <span class="tech-pill">ArcGIS Knowledge</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card tall">
+            <div class="project-image">
+              <img src="images/ciaimage.png" alt="mapping climate inequities in the Twin Cities">
+            </div>
+            <div class="project-content">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Spatial Data Science</span>
+              <span class="project-tag">ArcGIS Pro</span>
+
+              <h3>Spatial Analysis - Twin Cities Climate Inequality Analysis</h3>
+
+              <p>Project on mapping climate inequities in the Twin Cities. Focus on urban heat and how it disproportionately affects low-income and minority communities, focusing on limited tree cover, impervious surfaces, and older buildings. Explored how surface temperature and vegetation vary across socioeconomic groups. The analysis combined imagery that derived surface temperature and NDVI with demographic data from the US Census. Automated the workflow and outcome included maps and charts.</p>
+              <div class="project-footer">
+                <a class="btn small" href="https://github.com/shaamada/Climate_Inequality_Analysis/tree/main" target="_blank" rel="noopener">View
+                  Repository</a>
+                <a class="btn small" href="https://storymaps.arcgis.com/briefings/ba44cb41be9349dbb4fc8bd2910e64d8" target="_blank" rel="noopener">View
+                  StoryMap</a>  
+              </div>
+
+              <div class="tech-stack">
+                <span class="tech-pill">ArcGIS Pro</span>
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">ArcPy</span>
               </div>
             </div>
           </article>
