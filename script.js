@@ -20,7 +20,7 @@ const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
 
 // Loader control (min duration for smoothness)
-const MIN_LOADER_MS = 5000;
+const MIN_LOADER_MS = 1500;
 const start = performance.now();
 
 function hideLoader() {
