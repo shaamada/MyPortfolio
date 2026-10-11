@@ -9,6 +9,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
+  
+  <!-- Add meta description for SEO -->
+  <meta name="description" content="Shaam Adam - GIS Specialist Portfolio. Web GIS development, spatial data analysis, and Python automation expertise.">
 </head>
 
 <body>
@@ -35,6 +38,7 @@
       </div>
     </div>
   </div>
+  
   <!-- Accessible skip link -->
   <a class="skip-link" href="#home">Skip to main content</a>
 
@@ -117,7 +121,8 @@
           <li>GIS & Spatial: ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, ArcGIS JavaScript SDK</li>
           <li>Python (ArcPy, Pandas, GeoPandas), SQL (PostgreSQL/PostGIS), R</li>
           <li>Web Development: JavaScript, HTML, Arcade, Vite/npm</li>
-          <li>Applied AI: RAG-based LLM applications, Azure AI Foundry, LiteLLM</li>
+          <li>Applied AI: RAG-based LLM applications</li>
+          <li>Microsoft Azure: Docker, Azure AI Foundry</li>
         </ul>
       </div>
       <div class="section-inner">
@@ -129,10 +134,9 @@
           <div class="pill">ArcGIS Enterprise</div>
           <div class="pill">ArcGIS JavaScript SDK</div>
           <div class="pill">Python</div>
-          <div class="pill">ArcPy</div>
-          <div class="pill">Pandas</div>
           <div class="pill">RAG-based LLM applications</div>
           <div class="pill">SQL</div>
+          <div class="pill">Docker</div>
         </div>
       </div>
     </section>
@@ -276,6 +280,7 @@
         </div>
       </div>
     </section>
+    
     <!-- Footer -->
     <footer class="footer">
       <p class="tiny">© <span id="year"></span> Shaam Adam. All rights reserved.</p>
@@ -283,6 +288,11 @@
   </main>
 
   <script src="script.js"></script>
+  
+  <!-- Add script to update year -->
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
